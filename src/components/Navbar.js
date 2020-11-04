@@ -40,17 +40,17 @@ function Navbar() {
             {click ? <FaTimes /> : <FaBars />}
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-items">
+            <li className="nav-item">
               <Link to="/" className="nav-links">
                 Home
               </Link>
             </li>
-            <li className="nav-items">
+            <li className="nav-item">
               <Link to="/" className="nav-links">
                 Services
               </Link>
             </li>
-            <li className="nav-items">
+            <li className="nav-item">
               <Link to="/" className="nav-links">
                 Products
               </Link>
@@ -62,7 +62,7 @@ function Navbar() {
                 </Link>
               ) : (
                 <Link to="/sign-up" className="btn-link">
-                  <Button buttonStyle="btn--outline" btnSize="btn--mobile">
+                  <Button buttonStyle="btn--outline" buttonSize="btn--mobile">
                     SIGN UP
                   </Button>
                 </Link>

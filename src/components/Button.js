@@ -18,15 +18,18 @@ export const Button = ({
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
+
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+
   const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : COLOR[0];
+
   return (
-    <Button
+    <button
       className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
       onClick={onClick}
       type={type}
     >
       {children}
-    </Button>
+    </button>
   );
 };
